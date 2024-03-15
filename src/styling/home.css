@@ -1,0 +1,32 @@
+.container{
+    height: 100vh;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+.vector-graphics{
+    filter: drop-shadow(0 40px 10px rgba(0,0,0,0.3));
+    animation: vectorAnimation infinite 1s  ease-in-out alternate;
+}
+
+
+@keyframes vectorAnimation{
+    to{
+        transform: translateY(-10px);
+
+    }
+}
+.brandsBanner>svg{
+    color: white;
+    font-size: 2rem;
+    transition: color 0.5s;
+}
+.brandsBanner>svg:hover{
+    color: rgb(255,221,0);
+}
+.course{
+    margin-bottom: 1rem;
+    transition: all 0.25s
+}
+.course:hover{
+    transform: translateY(-10px);
+}

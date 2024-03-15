@@ -1,0 +1,29 @@
+.aboutus {
+    height: "full";
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px; /* Adjust padding as needed */
+    border: 2px solid transparent; /* Set initial border color to transparent */
+    border-image: linear-gradient(90deg, #FFD700, #FF6347, #87CEEB, #98FB98);
+    border-image-slice: 1;
+    animation: moveBorder 3s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes moveBorder {
+    0% {
+      border-image-source: linear-gradient(45deg, #FFD700, #FF6347, #87CEEB, #98FB98);
+    }
+    25% {
+      border-image-source: linear-gradient(45deg, #98FB98, #FFD700, #FF6347, #87CEEB);
+    }
+    50% {
+      border-image-source: linear-gradient(45deg, #87CEEB, #98FB98, #FFD700, #FF6347);
+    }
+    75% {
+      border-image-source: linear-gradient(45deg, #FF6347, #87CEEB, #98FB98, #FFD700);
+    }
+    100% {
+      border-image-source: linear-gradient(45deg, #FFD700, #FF6347, #87CEEB, #98FB98);
+    }
+  }
+  
